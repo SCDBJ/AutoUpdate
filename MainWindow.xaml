@@ -1,0 +1,40 @@
+﻿<Window x:Class="AutoUpdate.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoUpdate"
+        mc:Ignorable="d"
+        Title="自动更新" Height="558" Width="986" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Unloaded="Window_Unloaded" ResizeMode="CanMinimize" KeyDown="Window_KeyDown"
+         Closing="Window_Closing">
+    <Viewbox Margin="0,0,-18,0">
+        <Grid Width="817" Height="446">
+            <Button x:Name="BtnExecute" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="执行(ENTER)" FontSize="14" HorizontalAlignment="Center" Margin="291,412,428,0" VerticalAlignment="Top" Height="30" Width="101" Click="BtnExecute_Click"/>
+            <Label Content="模块名称:" FontSize="13" HorizontalAlignment="Left" Margin="14,18,0,0" VerticalAlignment="Top" Width="71" Height="26"/>
+            <ComboBox Name="comboModule" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontSize="13" VerticalContentAlignment="Center" Margin="77,20,0,0" VerticalAlignment="Top" Width="90">
+                <ComboBoxItem IsSelected="True">费控</ComboBoxItem>
+                <ComboBoxItem>采购</ComboBoxItem>
+                <ComboBoxItem>公共</ComboBoxItem>
+            </ComboBox>
+            <ListBox x:Name="listbox" HorizontalAlignment="Left" Height="361" Margin="11,46,0,0" VerticalAlignment="Top" Width="658"/>
+            <Button x:Name="BtnIntegration" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="集成开发平台(F1)" FontSize="13" HorizontalAlignment="Center" Margin="171,20,536,0" VerticalAlignment="Top" Height="24" Width="110" Click="BtnIntegration_Click"/>
+            <Button x:Name="BtnRemote" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="远程桌面(新K3)(F2)" FontSize="13" HorizontalAlignment="Center" Margin="283,20,414,0" VerticalAlignment="Top" Height="24" Width="120" Click="BtnRemote_Click" />
+            <Button x:Name="BtnRemoteOld" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="远程桌面(旧K3)(F3)" FontSize="13" HorizontalAlignment="Center" Margin="405,20,292,0" VerticalAlignment="Top" Height="24" Width="120" Click="BtnRemoteOld_Click"/>
+            <Button x:Name="BtnAdditionProc" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="附加进程(F4)" FontSize="13" HorizontalAlignment="Center" Margin="529,20,208,0" VerticalAlignment="Top" Height="24" Width="80" Click="BtnAdditionProc_Click"/>
+            <Button x:Name="BtnWeekNewsPaper" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="周报(F5)" FontSize="13" HorizontalAlignment="Center" Margin="613,20,150,0" VerticalAlignment="Top" Height="24" Width="54" Click="BtnWeekNewsPaper_Click"/>
+            <ComboBox Visibility="Hidden" x:Name="comboBill" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontSize="13" VerticalContentAlignment="Center" Margin="679,21,0,0" VerticalAlignment="Top" Width="135">
+                <ComboBoxItem IsSelected="True" Content="销售费用报支单"/>
+                <ComboBoxItem Content="费用报销单"/>
+                <ComboBoxItem Content="差旅费报销单"/>
+            </ComboBox>
+            <Button Visibility="Hidden" x:Name="BtnSearch" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="搜索" FontSize="13" HorizontalAlignment="Center" Margin="719,59,47,0" VerticalAlignment="Top" Height="24" Width="54" Click="BtnSearch_Click"/>
+            <Button x:Name="BtnStartNewK3" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="启动新K3(F6)" FontSize="13" HorizontalAlignment="Center" Margin="678,21,45,0" VerticalAlignment="Top" Height="23" Width="94" Click="BtnStartNewK3_Click"/>
+            <Button x:Name="BtnCloseNewK3" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="关闭新K3(F7)" FontSize="13" HorizontalAlignment="Center" Margin="678,59,45,0" VerticalAlignment="Top" Height="23" Width="94" Click="BtnCloseNewK3_Click"/>
+            <Button x:Name="BtnWeekReport" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="周报文件夹(F8)" FontSize="13" HorizontalAlignment="Center" Margin="678,101,45,0" VerticalAlignment="Top" Height="23" Width="94" Click="BtnWeekReport_Click"/>
+            <Button x:Name="BtnJobInfo" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="工作资料(F9)" FontSize="13" HorizontalAlignment="Center" Margin="678,147,45,0" VerticalAlignment="Top" Height="23" Width="94" Click="BtnJobInfo_Click"/>
+            <Button x:Name="BtnOpenVS" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="打开VS(F10)" FontSize="13" HorizontalAlignment="Center" Margin="678,190,45,0" VerticalAlignment="Top" Height="23" Width="94" Click="BtnOpenVS_Click"/>
+            <Button x:Name="BtnRemote130" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="10.10.201.130(F11)" FontSize="13" HorizontalAlignment="Center" Margin="678,238,10,0" VerticalAlignment="Top" Height="24" Width="129" Click="BtnRemote130_Click" />
+
+        </Grid>
+    </Viewbox>
+</Window>

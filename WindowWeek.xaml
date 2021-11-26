@@ -1,0 +1,54 @@
+﻿<Window x:Class="AutoUpdate.WindowWeek"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoUpdate"
+        mc:Ignorable="d"
+        Title="WindowWeek" Height="343.52" Width="1127.358" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <Grid>
+        <Label Content="周报文件名:" HorizontalAlignment="Left" FontSize="15" FontWeight="Bold" Margin="44,14,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="fileName" HorizontalAlignment="Left" FontSize="15" Margin="147,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="306" Height="20"/>
+        <Button x:Name="BtnSend" Background="#1C86EE" Foreground="White" FontWeight="Bold" Content="发送" FontSize="13" HorizontalAlignment="Center" Margin="528,263,532,0" VerticalAlignment="Top" Height="24" Width="59" Click="BtnSend_Click" RenderTransformOrigin="0.341,2.593" />
+        <Label Content="本周工作重点" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="237,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="目标及说明" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="749,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="本周执行情况" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="1003,44,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tBoxWork1" HorizontalAlignment="Left" Height="23" Margin="37,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="512"/>
+        <TextBox x:Name="tBoxTarget1" HorizontalAlignment="Left" Height="23" Margin="558,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="444"/>
+        <ComboBox Name="combobox1" HorizontalAlignment="Left" Margin="1032,86,0,0" VerticalAlignment="Top" Width="58" Height="23">
+            <ComboBoxItem IsSelected="True">完成</ComboBoxItem>
+            <ComboBoxItem>进行中</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tBoxWork2" HorizontalAlignment="Left" Height="23" Margin="37,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="512"/>
+        <TextBox x:Name="tBoxTarget2" HorizontalAlignment="Left" Height="23" Margin="558,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="444"/>
+        <ComboBox x:Name="combobox2" HorizontalAlignment="Left" Margin="1032,113,0,0" VerticalAlignment="Top" Width="58" Height="23">
+            <ComboBoxItem IsSelected="True">完成</ComboBoxItem>
+            <ComboBoxItem>进行中</ComboBoxItem>
+        </ComboBox>
+        <TextBox x:Name="tBoxWork3" HorizontalAlignment="Left" Height="23" Margin="37,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="512"/>
+        <TextBox x:Name="tBoxTarget3" HorizontalAlignment="Left" Height="23" Margin="558,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="444"/>
+        <ComboBox x:Name="combobox3" HorizontalAlignment="Left" Margin="1032,141,0,0" VerticalAlignment="Top" Width="58" Height="23">
+            <ComboBoxItem IsSelected="True" Content="完成"/>
+            <ComboBoxItem Content="进行中"/>
+        </ComboBox>
+        <TextBox x:Name="tBoxWork4" HorizontalAlignment="Left" Height="23" Margin="37,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="512"/>
+        <TextBox x:Name="tBoxTarget4" HorizontalAlignment="Left" Height="23" Margin="558,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="444"/>
+        <ComboBox x:Name="combobox4" HorizontalAlignment="Left" Margin="1032,169,0,0" VerticalAlignment="Top" Width="58" Height="23">
+            <ComboBoxItem IsSelected="True" Content="完成"/>
+            <ComboBoxItem Content="进行中"/>
+        </ComboBox>
+        <TextBox x:Name="tBoxWork5" HorizontalAlignment="Left" Height="23" Margin="37,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="512"/>
+        <TextBox x:Name="tBoxTarget5" HorizontalAlignment="Left" Height="23" Margin="558,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="444"/>
+        <ComboBox x:Name="combobox5" HorizontalAlignment="Left" Margin="1032,197,0,0" VerticalAlignment="Top" Width="58" Height="23">
+            <ComboBoxItem IsSelected="True" Content="完成"/>
+            <ComboBoxItem Content="进行中"/>
+        </ComboBox>
+        <TextBox x:Name="tBoxWork6" HorizontalAlignment="Left" Height="23" Margin="37,226,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="512"/>
+        <TextBox x:Name="tBoxTarget6" HorizontalAlignment="Left" Height="23" Margin="558,226,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="444"/>
+        <ComboBox x:Name="combobox6" HorizontalAlignment="Left" Margin="1032,226,0,0" VerticalAlignment="Top" Width="58" Height="23">
+            <ComboBoxItem IsSelected="True" Content="完成"/>
+            <ComboBoxItem Content="进行中"/>
+        </ComboBox>
+
+    </Grid>
+</Window>
